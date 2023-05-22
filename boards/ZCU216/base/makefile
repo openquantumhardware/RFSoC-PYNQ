@@ -4,10 +4,11 @@
 overlay_name := base
 design_name := base
 
-all: block_design bitstream check_timing handoff
-	@echo
-	@tput setaf 2 ; echo "Built $(overlay_name) successfully!"; tput sgr0;
-	@echo
+all: 
+#all: block_design bitstream check_timing handoff
+#	@echo
+#	@tput setaf 2 ; echo "Built $(overlay_name) successfully!"; tput sgr0;
+#	@echo
 
 block_design:
 	vivado -mode batch -source $(overlay_name).tcl -notrace
