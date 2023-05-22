@@ -3,7 +3,7 @@
 
 
 import os
-os.environ['BOARD'] = 'ZCU208'
+os.environ['BOARD'] = 'ZCU216'
 import xrfclk
 import rfsystem
 from smbus2 import SMBus, i2c_msg
