@@ -6,3 +6,4 @@ BSP_ZCU111 := ZCU111.bsp
 
 STAGE4_PACKAGES_ZCU111 := xrfclk xrfdc xsdfec ethernet zcu111_sensors
 STAGE4_PACKAGES_ZCU111 += xrt 
+STAGE4_PACKAGES_ZCU111 += sdcardshrink
