@@ -11,7 +11,7 @@ BASE_OVERLAY := ${BASE_OVERLAY_PATH}/base.bit
 VERSION := 3.0.1
 IMAGE := ${BOARD}-${VERSION}.img
 
-all: checkenv_rfsocpynq gitsubmodule ${PREBUILT_SDIST_DST} ${PREBUILT_ROOTFS_DST} checkenv_pynq ${BASE_OVERLAY} ${IMAGE}
+all: checkenv_rfsocpynq gitsubmodule ${PREBUILT_SDIST_DST} ${PREBUILT_ROOTFS_DST} checkenv_pynq ${IMAGE}
 	@echo ""
 	@echo "  RFSoC-PYNQ completed building image: ${IMAGE}"
 	@echo ""
