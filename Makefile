@@ -34,7 +34,7 @@ ${PREBUILT_SDIST_DST}:
 	wget https://github.com/Xilinx/PYNQ/releases/download/v3.0.1/pynq-3.0.1.tar.gz -O ${PREBUILT_SDIST_DST}
 
 ${PREBUILT_ROOTFS_DST}:
-	wget https://bit.ly/pynq_aarch64_v3_0_1 -O ${PREBUILT_ROOTFS_DST}
+	wget https://s3df.slac.stanford.edu/people/meeg/qick/sd_images/rootfs/jammy.aarch64.3.0.1.tar.gz -O ${PREBUILT_ROOTFS_DST}
 
 checkenv_pynq:
 	${CURDIR}/pynq/sdbuild/scripts/check_env.sh
