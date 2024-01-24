@@ -3,7 +3,7 @@
 # SPDX-License-Identifier: BSD-3-Clause
 
 from time import sleep
-from pynq.overlays.base import BaseOverlay
+#from pynq.overlays.base import BaseOverlay
 from pynq import GPIO
 from rfsoc4x2 import oled
 import pynq
@@ -23,6 +23,7 @@ lmk_reset.write(0)
 lmk_clk_sel0.write(0)
 lmk_clk_sel1.write(0)
 
+"""
 base = BaseOverlay('base.bit')
 base.init_rf_clks()
 
@@ -31,6 +32,7 @@ for _ in range(8):
     sleep(0.2)
     base.leds[0:4].off()
     sleep(0.2)
+"""
 
 # Find active interface name and IP address
 try:
