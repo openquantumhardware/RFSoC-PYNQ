@@ -4,6 +4,6 @@
 ARCH_ZCU216 := aarch64
 BSP_ZCU216 := ZCU216.bsp
 
-STAGE4_PACKAGES_ZCU216 := pynq ethernet xrt xrfclk xrfdc xsedfec
+STAGE4_PACKAGES_ZCU216 := pynq ethernet xrt xrfclk xrfdc xsdfec
 STAGE4_PACKAGES_ZCU216 += smbus2 rfsystem tics
 STAGE4_PACKAGES_ZCU216 += sdcardshrink
