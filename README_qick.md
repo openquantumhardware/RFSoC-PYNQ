@@ -13,7 +13,7 @@ You should read the Xilinx READMEs (both the one in this directory and in `pynq/
 * download the BSPs for the boards you want to build for
 * run in an account that has passwordless sudo
 
-Here's an example script, which expects BSPs and a prebuilt image in `~/pynq_deps`:
+Here's an example script, which expects BSPs (from Xilinx) and a prebuilt image (from Xilinx, or [ours](https://s3df.slac.stanford.edu/people/meeg/qick/sd_images/rootfs/jammy.aarch64.3.0.1.tar.gz)) in `~/pynq_deps`:
 ```
 git clone --recursive https://github.com/openquantumhardware/RFSoC-PYNQ.git
 
@@ -22,7 +22,7 @@ ln -s ~/pynq_deps/bsp/xilinx-zcu111-v2022.1-04191534.bsp RFSoC-PYNQ/boards/ZCU11
 ln -s ~/pynq_deps/bsp/RFSoC4x2_2022_1.bsp RFSoC-PYNQ/boards/RFSoC4x2/RFSoC4x2.bsp
 ln -s ~/pynq_deps/bsp/xilinx-zcu208-v2022.1-04191534.bsp RFSoC-PYNQ/boards/ZCU208/ZCU208.bsp
 
-# to use prebuilt board-agnostic image (if you don't do this, by default the script will download one)
+# to use prebuilt board-agnostic image (if you don't do this, by default the script will download ours)
 ln -s ~/pynq_deps/jammy.aarch64.3.0.1.tar.gz RFSoC-PYNQ/pynq/sdbuild/prebuilt/pynq_rootfs.aarch64.tar.gz
 
 cd RFSoC-PYNQ
