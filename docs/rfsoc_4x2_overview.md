@@ -10,21 +10,21 @@ The *RFSoC 4x2* is developed by the PYNQ team in partnership with [Real Digital]
 
 The RFSOC 4x2 is currently only available to Universities and Research Institutes. 
 
-* Academic price: $2149
+* Academic price: $2499
 
-To purchase a board, [submit a request to the AMD Xilinx University Program](https://www.xilinx.com/support/university/xup-boards/RFSoC4x2.html#Purchasing_at_academic_price). 
+To purchase a board, [submit a request to the AMD University Program](https://www.amd.com/en/corporate/university-program/aup-boards/rfsoc4x2.html#Purchasing_at_academic_price). 
 
-For enquiries [contact the AMD Xilinx University Program](mailto:xup@xilinx.com)
+For enquiries [contact the AMD University Program](mailto:aup@amd.com)
 
 ## Quick links
 
 * If you have a board, follow the [RFSoC 4x2 getting started guide](rfsoc_4x2_getting_started.html)
-* Download the latest [RFSoC 4x2 PYNQ image](http://www.pynq.io/board.html)
+* Download the latest [RFSoC 4x2 PYNQ image](http://www.pynq.io/boards.html)
 * Go to the [Real Digital RFSoC 4x2](https://dev.realdigital.org/hardware/rfsoc-4x2) webpage to download the user manual, schematics, Board Support Package (BSP), Vivado constraints files and other board resources. 
 
 ## Zynq RFSoC device
 
-The *RFSoC 4x2* has a Zynq Ultrascale+ RFSoC XCZU48DR-1FFVG1517E with a Quad-core ARM Cortex A53 Processing System (PS) and Xilinx Ultrascale+ Programmable Logic (PL). The XCZU48DR has 8x RF ADC 8x DACs. The RFsoC 4x2 board has 4x RF ADCs (5 GSPS) and 2x RF DACs (9.85 GSPS) available via SMA connectors with integrated baluns. This means antenna and external signal sources can be connected directly to the board.
+The *RFSoC 4x2* has a Zynq Ultrascale+ RFSoC XCZU48DR-1FFVG1517E with a Quad-core ARM Cortex A53 Processing System (PS) and AMD Ultrascale+ Programmable Logic (PL). The XCZU48DR has 8x RF ADC 8x DACs. The RFsoC 4x2 board has 4x RF ADCs (5 GSPS) and 2x RF DACs (9.85 GSPS) available via SMA connectors with integrated baluns. This means antenna and external signal sources can be connected directly to the board.
 
 ## Board Overview
 
@@ -66,7 +66,7 @@ The *RFSoC 4x2* has a Zynq Ultrascale+ RFSoC XCZU48DR-1FFVG1517E with a Quad-cor
 The board has been developed with open source in mind. The schematics, bill of materials, and the PCB Gerber files are available open-source. This will enable
 research teams, for example, to use the RFSoC 4x2 as the starting point for developing custom boards which they may require in their specific research experiments.
 
-Most supporting files for the board are available for download on the [Real Digital RFSoC 4x2 page](https://dev.realdigital.org/hardware/rfsoc-4x2). Due to the size of the Gerber files (several 10's GB) please contact [xup@xilinx.com](mailto:xup@xilinx.com) if you require the PCB Gerber files.
+Most supporting files for the board are available for download on the [Real Digital RFSoC 4x2 page](https://www.realdigital.org/hardware/rfsoc-4x2). Due to the size of the Gerber files (several 10's GB) please contact [aup@amd.com](mailto:aup@amd.com) if you require the PCB Gerber files.
 
 ## Next steps
 
