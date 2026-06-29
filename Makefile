@@ -11,6 +11,9 @@ BASE_OVERLAY := ${BASE_OVERLAY_PATH}/base.bit
 VERSION := 3.1.3
 IMAGE := ${BOARD}-${VERSION}.img
 
+BUILD_LIGHT_SDIST := 1
+export BUILD_LIGHT_SDIST
+
 all: checkenv_rfsocpynq gitsubmodule ${PREBUILT_SDIST_DST} ${PREBUILT_ROOTFS_DST} checkenv_pynq ${IMAGE}
 	@echo ""
 	@echo "  RFSoC-PYNQ completed building image: ${IMAGE}"
@@ -29,11 +32,12 @@ ifeq ($(wildcard $(BSP_DST)),)
 endif
 
 ${PREBUILT_SDIST_DST}:
-	wget https://download.amd.com/opendownload/pynq/pynq-3.1.tar.gz -O ${PREBUILT_SDIST_DST}
+	wget https://s3df.slac.stanford.edu/people/meeg/qick/sd_images/sdist/pynq-3.1.3.tar.gz -O ${PREBUILT_SDIST_DST}
+	#wget https://download.amd.com/opendownload/pynq/pynq-3.1.tar.gz -O ${PREBUILT_SDIST_DST}
 
 ${PREBUILT_ROOTFS_DST}:
-	#wget https://s3df.slac.stanford.edu/people/meeg/qick/sd_images/rootfs/jammy.aarch64.3.0.1.tar.gz -O ${PREBUILT_ROOTFS_DST}
-	wget https://download.amd.com/opendownload/pynq/jammy.aarch64.3.1.0.tar.gz -O ${PREBUILT_ROOTFS_DST}
+	wget https://s3df.slac.stanford.edu/people/meeg/qick/sd_images/rootfs/jammy.aarch64.3.1.3.tar.gz -O ${PREBUILT_ROOTFS_DST}
+	#wget https://download.amd.com/opendownload/pynq/jammy.aarch64.3.1.0.tar.gz -O ${PREBUILT_ROOTFS_DST}
 
 checkenv_pynq:
 	${CURDIR}/pynq/sdbuild/scripts/check_env.sh
